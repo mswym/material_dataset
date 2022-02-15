@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!--
+
+	Automatically converted from Wavefront OBJ
+
+-->
+
+<scene version="0.5.0">
+	<integrator type="photonmapper"/>
+
+	<bsdf type="ward" id="material_0_material">
+		<rgb name="diffuseReflectance" value="0.5 0.5 0.5"/>
+		<rgb name="specularReflectance" value="$Spec"/>
+		<float name="alpha" value="$Alpha"/>
+	</bsdf>
+
+	<bsdf type="roughcoating" id="santa_2_material">
+		<float name="intIOR" value="1.7"/>
+
+		<bsdf type="roughdiffuse">
+			<rgb name="reflectance" value="0.2588 0 0"/>
+		</bsdf>
+	</bsdf>
+	
+
+	<shape type="obj" id="Nativity_wTorigC_1_mesh">
+		<string name="filename" value="../obj/10_Obj_bmp.obj"/>
+
+		<bsdf type="twosided">
+			<ref name="bsdf" id="material_0_material"/>
+		</bsdf>
+		<transform name="toWorld">
+			<translate x="0.3" y="-0.2" z="0"/>
+			<scale x="0.75" y="0.75" z="0.75"/>
+
+			<rotate y="1" angle="$ObjRotate"/>
+		</transform>
+	</shape>
+
+	<shape type="obj" id="Table">
+		<string name="filename" value="../obj/Table.obj"/>
+
+		<bsdf type="twosided">
+			<ref name="bsdf" id="santa_2_material"/>
+		</bsdf>
+		<transform name="toWorld">
+			<translate x="0" y="-0.5" z="0"/>
+			<scale x="2" y="2" z="2"/>
+			<!--<rotate y="1" angle="$ObjRotate"/>-->
+		</transform>
+	</shape>
+
+	<sensor type="perspective">
+		<float name="farClip" value="1440.3"/>
+		<float name="focusDistance" value="6.89088"/>
+		<float name="fov" value="34.5159"/>
+		<string name="fovAxis" value="x"/>
+		<float name="nearClip" value="2.80098"/>
+		<transform name="toWorld">
+
+			<lookat target="-0.0992548, 1.47692, -5.67904" origin="-0.116686, 1.72626, -6.6473" up="0.00448795, 0.968416, 0.249301"/>
+		</transform>
+
+		<sampler type="independent">
+			<integer name="sampleCount" value="16"/>
+		</sampler>
+
+		<film type="hdrfilm">
+			<boolean name="banner" value="false"/>
+			<integer name="height" value="512"/>
+			<integer name="width" value="512"/>
+
+			<rfilter type="gaussian"/>
+		</film>
+	</sensor>
+
+	<emitter type="envmap" id="EnvMap">
+		<!--<string name="filename" value="20050806-03_hd.hdr"/>-->
+		<!--<string name="filename" value="../illum/20070310-01_hd.hdr"/>-->
+		<string name="filename" value="$IllumName"/>
+		<transform name="toWorld">
+			<rotate y="1" angle="0"/>
+			<!--			<rotate y="1" angle="$IllumRotate"/> -->
+		</transform>
+		<float name="scale" value="1"/>
+	</emitter>
+</scene>
