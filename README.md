@@ -4,7 +4,7 @@
 This repository shares the image dataset and source codes used in the research paper, 
 "Visual discrimination of optical material properties: a large-scale study."
 
-Link to paper: https://www.biorxiv.org/content/10.1101/800870v4
+Link to paper: https://jov.arvojournals.org/article.aspx?articleid=2778599
 
 ## Abstract
 
@@ -31,7 +31,7 @@ not strictly controlled in the laboratory.
 
 Users can download the image dataset from the following link. 
 
-https://www.dropbox.com/s/6bh1ncm8mv3i7dx/material_swym.zip?dl=0
+https://www.dropbox.com/s/btdiojzqku0hac9/material_swym.zip?dl=0
 
 Our dataset is divided into three folders according to the illumination conditions. 
 Each illumination condition folder contains folders of the material tasks (Task 1 to 6). 
