@@ -55,7 +55,7 @@ for each task in the crowdsourcing and laboratory experiments.
 
 ## Playground for the material task
 
-(Under preparation) We are preparing a playground for users to easily test our material task in their web browsers with javascript, combined with the author's another open-source test battery project (Adolphe, Sawayama, Maurel, Delmas, Oudeyer, & Sauzeon, in preparation). 
+(Under preparation) We are preparing a playground for users to easily test our material task in their web browsers with javascript, combined with the author's another open-source test battery project (https://github.com/mswym/cog_testbattery) (Adolphe, Sawayama, Maurel, Delmas, Oudeyer, & Sauzeon, in preparation). 
 
 ## Render more images
 
