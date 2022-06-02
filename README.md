@@ -7,3 +7,5 @@ This repository shares the image dataset and source codes used in the research p
 Link to paper: https://jov.arvojournals.org/article.aspx?articleid=2778599
 
 ## Branch for Mitsuba 2 expansion
+
+We use lightprobe data from Bernhard Vogl's website http://dativ.at/lightprobes/
